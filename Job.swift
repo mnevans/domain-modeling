@@ -8,21 +8,35 @@
 
 import Foundation
 
+enum Salary {
+    case Hourly(Double), Yearly(Double)
+}
+
 class Job {
     var title : String
-    var salary : Int
+    var salary : Salary
     
-    init(title: String, salary: Int) {
+    init(title: String, salary: Salary) {
         self.title = title
         self.salary = salary
     }
     
-    func calculateIncome(hours: Int) -> Int {
-        return salary * hours
+    func calculateIncome(hours: Double) -> Double {
+        switch salary {
+        case .Yearly(let pay):
+            return pay
+        case .Hourly(let pay):
+            return hours * pay
+        }
     }
     
-    func raise(var percentage: Int) -> Double {
+    func raise(var percentage: Double) -> Void {
         percentage /= 100
-        return Double(salary * percentage)
+        switch salary {
+        case .Yearly(let pay):
+            salary = Salary.Yearly(pay * percentage)
+        case .Hourly(let pay):
+            salary = Salary.Hourly(pay * percentage)
+        }
     }
 }
