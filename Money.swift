@@ -21,12 +21,20 @@ struct Money {
     }
     
     // convert the previous currency to USD
-    func convert (sum: Double, previousCurrency: String, newCurrency: String) -> Money {
+    func convert (sum: Double, previousCurrency: String, newCurrency: String) -> Money? {
         let num = Money(amount: sum, currency: previousCurrency)
         let numUSD = convertUSD(num)
-        let amountUSD = Money(amount: numUSD!, currency: "USD")
-        let newSum = convertOther(amountUSD, type: newCurrency)
-        return Money(amount: newSum!, currency: newCurrency)
+        if numUSD == nil {
+            return nil
+        } else {
+            let amountUSD = Money(amount: numUSD!, currency: "USD")
+            let amountOther = convertOther(amountUSD, type: newCurrency)
+            if amountOther == nil {
+                return nil
+            } else {
+                return Money(amount: amountOther!, currency: newCurrency)
+            }
+        }
     }
     
     // convert the amount of money to USD
@@ -67,19 +75,33 @@ struct Money {
     func add(firstAmount: Money, secondAmount: Money) -> Money? {
         let first = convert(firstAmount.amount, previousCurrency: firstAmount.currency, newCurrency: "USD")
         let second = convert(secondAmount.amount, previousCurrency: secondAmount.currency, newCurrency: "USD")
-        let sumUSD = Money(amount: first.amount + second.amount, currency: "USD")
-        let sumOther = convertOther(sumUSD, type: secondAmount.currency)
-        
-        return Money(amount: sumOther!, currency: secondAmount.currency)
+        if first == nil || second == nil {
+            return nil
+        } else {
+            let sumUSD = Money(amount: first!.amount + second!.amount, currency: "USD")
+            let sumOther = convertOther(sumUSD, type: secondAmount.currency)
+            if sumOther == nil {
+                return nil
+            } else {
+                return Money(amount: sumOther!, currency: secondAmount.currency)
+            }
+        }
     }
     
     // subtract two amount of currency (USD) from one another
     func subtract(firstAmount: Money, secondAmount: Money) -> Money? {
         let first = convert(firstAmount.amount, previousCurrency: firstAmount.currency, newCurrency: "USD")
         let second = convert(secondAmount.amount, previousCurrency: secondAmount.currency, newCurrency: "USD")
-        let sumUSD = Money(amount: first.amount - second.amount, currency: "USD")
-        let sumOther = convertOther(sumUSD, type: secondAmount.currency)
-        
-        return Money(amount: sumOther!, currency: secondAmount.currency)
+        if first == nil || second == nil {
+            return nil
+        } else {
+            let sumUSD = Money(amount: first!.amount - second!.amount, currency: "USD")
+            let sumOther = convertOther(sumUSD, type: secondAmount.currency)
+            if sumOther == nil {
+                return nil
+            } else {
+                return Money(amount: sumOther!, currency: secondAmount.currency)
+            }
+        }
     }
 }

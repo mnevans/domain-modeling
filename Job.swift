@@ -22,7 +22,7 @@ class Job {
     }
     
     func calculateIncome(hours: Double) -> Double {
-        switch salary {
+        switch self.salary {
         case .Yearly(let pay):
             return pay
         case .Hourly(let pay):
@@ -32,11 +32,11 @@ class Job {
     
     func raise(var percentage: Double) -> Void {
         percentage /= 100
-        switch salary {
+        switch self.salary {
         case .Yearly(let pay):
-            salary = Salary.Yearly(pay * percentage)
+            self.salary = Salary.Yearly(pay * percentage)
         case .Hourly(let pay):
-            salary = Salary.Hourly(pay * percentage)
+            self.salary = Salary.Hourly(pay * percentage)
         }
     }
 }
