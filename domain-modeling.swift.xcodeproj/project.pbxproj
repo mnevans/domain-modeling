@@ -11,7 +11,7 @@
 		209EEA4B1BCF7971007C08F7 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209EEA4A1BCF7971007C08F7 /* Person.swift */; settings = {ASSET_TAGS = (); }; };
 		209EEA4D1BCF79B8007C08F7 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209EEA4C1BCF79B8007C08F7 /* Job.swift */; settings = {ASSET_TAGS = (); }; };
 		209EEA4F1BCF79C7007C08F7 /* Family.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209EEA4E1BCF79C7007C08F7 /* Family.swift */; settings = {ASSET_TAGS = (); }; };
-		209EEA511BCF79D4007C08F7 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209EEA501BCF79D4007C08F7 /* Money.swift */; settings = {ASSET_TAGS = (); }; };
+		209EEA531BCF803F007C08F7 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209EEA521BCF803F007C08F7 /* Money.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,7 +32,7 @@
 		209EEA4A1BCF7971007C08F7 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		209EEA4C1BCF79B8007C08F7 /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 		209EEA4E1BCF79C7007C08F7 /* Family.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Family.swift; sourceTree = "<group>"; };
-		209EEA501BCF79D4007C08F7 /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Money.swift; path = "domain-modeling/Money.swift"; sourceTree = "<group>"; };
+		209EEA521BCF803F007C08F7 /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +49,7 @@
 		209EEA371BCF69F1007C08F7 = {
 			isa = PBXGroup;
 			children = (
-				209EEA501BCF79D4007C08F7 /* Money.swift */,
+				209EEA521BCF803F007C08F7 /* Money.swift */,
 				209EEA4C1BCF79B8007C08F7 /* Job.swift */,
 				209EEA4E1BCF79C7007C08F7 /* Family.swift */,
 				209EEA4A1BCF7971007C08F7 /* Person.swift */,
@@ -132,7 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				209EEA4B1BCF7971007C08F7 /* Person.swift in Sources */,
-				209EEA511BCF79D4007C08F7 /* Money.swift in Sources */,
+				209EEA531BCF803F007C08F7 /* Money.swift in Sources */,
 				209EEA4F1BCF79C7007C08F7 /* Family.swift in Sources */,
 				209EEA4D1BCF79B8007C08F7 /* Job.swift in Sources */,
 				209EEA441BCF69F1007C08F7 /* main.swift in Sources */,
@@ -253,6 +253,7 @@
 				209EEA491BCF69F1007C08F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
