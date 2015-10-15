@@ -19,13 +19,15 @@ class Person {
         self.firstName = firstName
         self.lastName = lastName
         self.age = age
-        self.spouse = spouse
-        self.job = job
         
-        if age < 16 {
+        if age >= 16 {
+            self.job = job
+        } else {
             self.job = nil
         }
-        if age < 18 {
+        if age >= 18 {
+            self.spouse = spouse
+        } else {
             self.spouse = nil
         }
     }

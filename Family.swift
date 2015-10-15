@@ -15,16 +15,11 @@ class Family {
         self.members = members
     }
     
-    func householdIncome() -> Double {
+    func householdIncome(totalHours: Double) -> Double {
         var result = 0.0
         for member in members {
             if member.job != nil {
-                switch member.job!.salary {
-                case .Yearly(let pay):
-                    result += pay
-                case .Hourly(let pay):
-                    result += pay * 2000
-                }
+                result += member.job!.calculateIncome(totalHours)
             }
         }
         return result
