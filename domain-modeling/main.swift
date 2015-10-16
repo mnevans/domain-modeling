@@ -16,16 +16,17 @@ var amountGBP = Money(amount: 100, currency: "GBP")
 print("Current amount of money: 100 USD and 100 GBP")
 print("")
 
+// convert USD to GBP
 print("Amount of money after converting USD to GBP:")
-print(amountUSD.convert("GBP").amount) // convert USD to GBP so $100 * .5 = $50
+print(amountUSD.convert("GBP").amount) // convert USD to GBP
 print("")
 
 print("Amount of money after adding converted USD and GBP amounts:")
-print(amountUSD.add(amountGBP).amount) // $100 USD (converts to $50 GBP) + $100 GBP = $150 because .5 GSP = 1 USD
+print(amountUSD.add(amountGBP).amount)
 print("")
 
 print("Amount of money after subtracting converted USD and GBP amounts:")
-print(amountUSD.subtract(amountGBP).amount) // $100 USD (converts to $50 GBP) - $100 GBP = -$50 because .5 GSP = 1 USD
+print(amountUSD.subtract(amountGBP).amount)
 print("")
 
 var amountEUR = Money(amount: 100, currency: "EUR")
@@ -33,6 +34,7 @@ var amountCAN = Money(amount: 100, currency: "CAN")
 print("Current amount of money: 100 EUR and 100 CAN")
 print("")
 
+// convert EUR to CAN
 print("Amount of money after converting EUR to CAN:")
 print(amountEUR.convert("CAN").amount)
 print("")
@@ -50,6 +52,7 @@ var moneyEUR = Money(amount: 100, currency: "EUR")
 print("Current amount of money: 100 GBP and 100 EUR")
 print("")
 
+// convert GBP to EUR
 print("Amount of money after converting GBP to EUR:")
 print(moneyGBP.convert("EUR").amount)
 print("")
@@ -103,7 +106,7 @@ print("")
 print("---- TESTING FAMILY ----")
 print("")
 
-var family = Family(members: [Jack, Jill]) // girl has 65/hour, boy has 100.00/year
+var family = Family(members: [Jack, Jill])
 
 print("Jack and Jill's yearly household income is:")
 print(family.householdIncome(2000)) // 25 * 2000 + 110000 = 114000
