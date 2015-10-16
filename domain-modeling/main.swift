@@ -18,12 +18,48 @@ print("")
 
 print("Amount of money after converting USD to GBP:")
 print(amountUSD.convert("GBP").amount) // convert USD to GBP so $100 * .5 = $50
+print("")
 
 print("Amount of money after adding converted USD and GBP amounts:")
 print(amountUSD.add(amountGBP).amount) // $100 USD (converts to $50 GBP) + $100 GBP = $150 because .5 GSP = 1 USD
+print("")
 
 print("Amount of money after subtracting converted USD and GBP amounts:")
 print(amountUSD.subtract(amountGBP).amount) // $100 USD (converts to $50 GBP) - $100 GBP = -$50 because .5 GSP = 1 USD
+print("")
+
+var amountEUR = Money(amount: 100, currency: "EUR")
+var amountCAN = Money(amount: 100, currency: "CAN")
+print("Current amount of money: 100 EUR and 100 CAN")
+print("")
+
+print("Amount of money after converting EUR to CAN:")
+print(amountEUR.convert("CAN").amount)
+print("")
+
+print("Amount of money after adding converted EUR and CAN amounts:")
+print(amountEUR.add(amountCAN).amount)
+print("")
+
+print("Amount of money after subtracting converted EUR and CAN amounts:")
+print(amountEUR.subtract(amountCAN).amount)
+print("")
+
+var moneyGBP = Money(amount: 100, currency: "GBP")
+var moneyEUR = Money(amount: 100, currency: "EUR")
+print("Current amount of money: 100 GBP and 100 EUR")
+print("")
+
+print("Amount of money after converting GBP to EUR:")
+print(moneyGBP.convert("EUR").amount)
+print("")
+
+print("Amount of money after adding converted EUR and CAN amounts:")
+print(moneyGBP.add(moneyEUR).amount)
+print("")
+
+print("Amount of money after subtracting converted EUR and CAN amounts:")
+print(moneyGBP.subtract(moneyEUR).amount)
 
 print("")
 print("---- TESTING JOB ----")
