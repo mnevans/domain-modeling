@@ -34,13 +34,13 @@ class Person {
     
     func toString() -> String {
         if (job == nil && spouse == nil) {
-            return ("Name: \(firstName) + \(lastName). Age: \(age). They are unemployed and single! How sad.")
+            return ("Name: \(firstName) \(lastName). Age: \(age). \(firstName) is unemployed and single! How sad.")
         } else if (job == nil && spouse != nil) {
-            return ("Name: \(firstName) + \(lastName). Age: \(age). Job: Unemployed. Spouse: \(spouse!.firstName).")
+            return ("Name: \(firstName) \(lastName). Age: \(age). Job: Unemployed. Spouse: \(spouse!.firstName).")
         } else if (job != nil && spouse == nil) {
-            return ("Name: \(firstName) + \(lastName). Age: \(age). Job: \(job!.title). Single.")
+            return ("Name: \(firstName) \(lastName). Age: \(age). Job: \(job!.title). Single.")
         } else {
-            return ("Name: \(firstName) + \(lastName). Age: \(age). Job: \(job!.title). Spouse: \(spouse!.firstName). Both employed AND married, how exciting!")
+            return ("Name: \(firstName) \(lastName). Age: \(age). Job: \(job!.title). Spouse: \(spouse!.firstName). Both employed AND married, how exciting for \(firstName)!")
         }
     }
 }

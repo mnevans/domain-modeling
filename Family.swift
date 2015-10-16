@@ -9,17 +9,17 @@
 import Foundation
 
 class Family {
-    var members = [Person]
+    var members = [Person?]()
     
-    init(members : [Person]) {
+    init(members : [Person?]) {
         self.members = members
     }
     
     func householdIncome(totalHours: Double) -> Double {
         var result = 0.0
         for member in members {
-            if member.job != nil {
-                result += member.job!.calculateIncome(totalHours)
+            if member!.job != nil {
+                result += member!.job!.calculateIncome(totalHours)
             }
         }
         return result
@@ -38,3 +38,4 @@ class Family {
         }
     }
 }
+

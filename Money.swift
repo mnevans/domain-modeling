@@ -54,3 +54,4 @@ struct Money {
         return result
     }
 }
+
