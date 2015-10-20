@@ -9,7 +9,6 @@
 import Foundation
 
 class Person {
-    var description: String { return "\(firstName) \(lastName) \(age) \(spouse) \(job)" }
     let firstName : String
     let lastName : String
     var age : Int
@@ -32,6 +31,8 @@ class Person {
             self.spouse = nil
         }
     }
+    
+    var description: String { return "\(firstName) \(lastName) \(age) \(spouse) \(job)" }
     
     func toString() -> String {
         if (job == nil && spouse == nil) {

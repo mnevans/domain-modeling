@@ -9,12 +9,13 @@
 import Foundation
 
 class Family {
-    var description: String { return "\(members)" }
     var members = [Person?]()
     
     init(members : [Person?]) {
         self.members = members
     }
+    
+    var description: String { return "\(members)" }
     
     func householdIncome(totalHours: Double) -> Double {
         var result = 0.0

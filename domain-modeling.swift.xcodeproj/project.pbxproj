@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2061D4831BD6FA5400FD90A3 /* CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2061D4821BD6FA5300FD90A3 /* CustomStringConvertible.swift */; settings = {ASSET_TAGS = (); }; };
+		2061D4851BD6FA8F00FD90A3 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2061D4841BD6FA8F00FD90A3 /* Double.swift */; settings = {ASSET_TAGS = (); }; };
+		2061D4871BD6FBBB00FD90A3 /* Mathematics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2061D4861BD6FBBB00FD90A3 /* Mathematics.swift */; settings = {ASSET_TAGS = (); }; };
 		209EEA441BCF69F1007C08F7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209EEA431BCF69F1007C08F7 /* main.swift */; };
 		209EEA4B1BCF7971007C08F7 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209EEA4A1BCF7971007C08F7 /* Person.swift */; settings = {ASSET_TAGS = (); }; };
 		209EEA4D1BCF79B8007C08F7 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209EEA4C1BCF79B8007C08F7 /* Job.swift */; settings = {ASSET_TAGS = (); }; };
@@ -27,6 +30,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2061D4821BD6FA5300FD90A3 /* CustomStringConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomStringConvertible.swift; sourceTree = "<group>"; };
+		2061D4841BD6FA8F00FD90A3 /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		2061D4861BD6FBBB00FD90A3 /* Mathematics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mathematics.swift; sourceTree = "<group>"; };
 		209EEA401BCF69F1007C08F7 /* domain-modeling.swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "domain-modeling.swift"; sourceTree = BUILT_PRODUCTS_DIR; };
 		209EEA431BCF69F1007C08F7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		209EEA4A1BCF7971007C08F7 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -50,7 +56,10 @@
 			isa = PBXGroup;
 			children = (
 				209EEA521BCF803F007C08F7 /* Money.swift */,
+				2061D4821BD6FA5300FD90A3 /* CustomStringConvertible.swift */,
+				2061D4841BD6FA8F00FD90A3 /* Double.swift */,
 				209EEA4C1BCF79B8007C08F7 /* Job.swift */,
+				2061D4861BD6FBBB00FD90A3 /* Mathematics.swift */,
 				209EEA4E1BCF79C7007C08F7 /* Family.swift */,
 				209EEA4A1BCF7971007C08F7 /* Person.swift */,
 				209EEA421BCF69F1007C08F7 /* domain-modeling.swift */,
@@ -135,7 +144,10 @@
 				209EEA531BCF803F007C08F7 /* Money.swift in Sources */,
 				209EEA4F1BCF79C7007C08F7 /* Family.swift in Sources */,
 				209EEA4D1BCF79B8007C08F7 /* Job.swift in Sources */,
+				2061D4871BD6FBBB00FD90A3 /* Mathematics.swift in Sources */,
 				209EEA441BCF69F1007C08F7 /* main.swift in Sources */,
+				2061D4831BD6FA5400FD90A3 /* CustomStringConvertible.swift in Sources */,
+				2061D4851BD6FA8F00FD90A3 /* Double.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

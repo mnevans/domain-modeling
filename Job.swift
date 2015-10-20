@@ -13,7 +13,6 @@ enum Salary {
 }
 
 class Job {
-    var description: String { return "\(title) \(salary)" }
     var title : String
     var salary : Salary
     
@@ -21,6 +20,8 @@ class Job {
         self.title = title
         self.salary = salary
     }
+    
+    var description: String { return "\(title) \(salary)" }
     
     func calculateIncome(hours: Double) -> Double {
         switch self.salary {

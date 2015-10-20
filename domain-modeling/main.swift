@@ -8,9 +8,14 @@
 
 import Foundation
 
-protocol CustomStringConvertible {
-    var description : String { get }
-}
+// test CustomStringConvertible protocol
+
+// test Mathematics protocol
+
+// test Double extension
+
+// ---- Tests below are from Domain Modeling pt. 1 ----
+/*
 
 print("---- TESTING MONEY ----")
 print("")
@@ -134,3 +139,4 @@ print("Poor Person is too young to have a child, so the amount of people in thei
 family.haveChild()
 print(poorPerson.members.count) // cannot produce a new child because under the age of 21
 print("")
+*/
