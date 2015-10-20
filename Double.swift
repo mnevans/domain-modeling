@@ -10,7 +10,7 @@ import Foundation
 
 extension Double {
     var USD: Money { return Money(amount: self, currency: "USD") }
-    var GPB: Money { return Money(amount: self, currency: "GPB") }
+    var GBP: Money { return Money(amount: self, currency: "GBP") }
     var EUR: Money { return Money(amount: self, currency: "EUR") }
     var CAN: Money { return Money(amount: self, currency: "CAN") }
 }

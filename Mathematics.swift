@@ -9,7 +9,7 @@
 import Foundation
 
 protocol Mathematics {
-    func add(secondAmount: Money) -> Money?
+    func add(secondAmount: Money) -> Money
     
-    func subtract(secondAmount: Money) -> Money?
+    func subtract(secondAmount: Money) -> Money
 }

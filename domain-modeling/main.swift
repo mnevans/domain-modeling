@@ -10,9 +10,45 @@ import Foundation
 
 // test CustomStringConvertible protocol
 
+var money = Money(amount: 300, currency: "USD")
+var teacher = Job(title: "Teacher", salary: .Hourly(25.00))
+var programmer = Job(title: "Programmer", salary: .Yearly(110000.00))
+var jack = Person(firstName: "Jack", lastName: "Beanstalk", age: 27, spouse: nil, job: programmer)
+var jill = Person(firstName: "Jill", lastName: "Beanstalk", age: 25, spouse: jack, job: teacher)
+var family = Family(members: [jack, jill])
+
+print(money.description)
+print(teacher.description)
+print(programmer.description)
+print(jack.description)
+print(jill.description)
+print(family.description)
+print("")
+
 // test Mathematics protocol
 
+var firstNum = Money(amount: 18.00, currency: "USD")
+var secondNum = Money(amount: 22.00, currency: "USD")
+var sum = firstNum.add(secondNum)
+var difference = firstNum.subtract(secondNum)
+
+print("The value of the first number is: \(firstNum)")
+print("The value of the second number is: \(secondNum)")
+print("The sum of the numbers is: \(sum)")
+print("The difference of the numbers is: \(difference)")
+print("")
+
 // test Double extension
+
+var usd = 17.11.USD
+var gbp = 18.08.GBP
+var eur = 13.14.EUR
+var can = 64.78.CAN
+
+print(usd.description)
+print(gbp.description)
+print(eur.description)
+print(can.description)
 
 // ---- Tests below are from Domain Modeling pt. 1 ----
 /*
