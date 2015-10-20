@@ -8,6 +8,10 @@
 
 import Foundation
 
+protocol CustomStringConvertible {
+    var description : String { get }
+}
+
 print("---- TESTING MONEY ----")
 print("")
 

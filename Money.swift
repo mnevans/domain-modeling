@@ -8,7 +8,15 @@
 
 import Foundation
 
-struct Money {
+protocol Mathematics {
+    var add : Bool { get }
+    var subtract : Bool { get }
+}
+
+struct Money: CustomStringConvertible, Mathematics {
+    var description: String { return "\(currency) \(amount)" }
+    let add = true //?
+    let subtract = true //?
     var amount : Double
     var currency : String
     

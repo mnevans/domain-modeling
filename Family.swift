@@ -9,6 +9,7 @@
 import Foundation
 
 class Family {
+    var description: String { return "\(members)" }
     var members = [Person?]()
     
     init(members : [Person?]) {

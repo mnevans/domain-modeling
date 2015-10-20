@@ -9,6 +9,7 @@
 import Foundation
 
 class Person {
+    var description: String { return "\(firstName) \(lastName) \(age) \(spouse) \(job)" }
     let firstName : String
     let lastName : String
     var age : Int

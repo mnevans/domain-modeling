@@ -13,6 +13,7 @@ enum Salary {
 }
 
 class Job {
+    var description: String { return "\(title) \(salary)" }
     var title : String
     var salary : Salary
     
