@@ -15,7 +15,7 @@ class Family {
         self.members = members
     }
     
-    var description: String { return "\(members)" }
+    var description: String { return toString() }
     
     func householdIncome(totalHours: Double) -> Double {
         var result = 0.0
@@ -38,6 +38,14 @@ class Family {
         if count >= 1 {
             members.append(newPerson)
         }
+    }
+    
+    func toString() -> String {
+        var fam = ""
+        for member in members {
+            fam += "\(member!.firstName) \(member!.lastName) "
+        }
+        return fam
     }
 }
 

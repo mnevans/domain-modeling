@@ -9,6 +9,8 @@
 import Foundation
 
 // test CustomStringConvertible protocol
+print("---- TESTING CUSTOM STRING CONVERTIBLE PROTOCOL ----")
+print("")
 
 var money = Money(amount: 300, currency: "USD")
 var teacher = Job(title: "Teacher", salary: .Hourly(25.00))
@@ -18,27 +20,39 @@ var jill = Person(firstName: "Jill", lastName: "Beanstalk", age: 25, spouse: jac
 var family = Family(members: [jack, jill])
 
 print(money.description)
+print("")
 print(teacher.description)
 print(programmer.description)
+print("")
 print(jack.description)
 print(jill.description)
+print("")
+print("The family members are:")
 print(family.description)
 print("")
 
 // test Mathematics protocol
+print("---- TESTING MATHEMATICS PROTOCOL ----")
+print("")
 
 var firstNum = Money(amount: 18.00, currency: "USD")
 var secondNum = Money(amount: 22.00, currency: "USD")
 var sum = firstNum.add(secondNum)
 var difference = firstNum.subtract(secondNum)
 
-print("The value of the first number is: \(firstNum)")
-print("The value of the second number is: \(secondNum)")
-print("The sum of the numbers is: \(sum)")
-print("The difference of the numbers is: \(difference)")
+print("The value of the first number is:")
+print(firstNum.description)
+print("The value of the second number is:")
+print(secondNum.description)
+print("The sum of the numbers is:")
+print(sum.description)
+print("The difference of the numbers is:")
+print(difference.description)
 print("")
 
 // test Double extension
+print("---- TESTING DOUBLE EXTENSION ----")
+print("")
 
 var usd = 17.11.USD
 var gbp = 18.08.GBP

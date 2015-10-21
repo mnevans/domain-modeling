@@ -32,7 +32,7 @@ class Person {
         }
     }
     
-    var description: String { return "\(firstName) \(lastName) \(age) \(spouse) \(job)" }
+    var description: String { return toString() }
     
     func toString() -> String {
         if (job == nil && spouse == nil) {
